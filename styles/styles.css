@@ -1,6 +1,8 @@
 :root {
-    --font-size-medium: 18px;
+    --font-size-small: 18px;
+    --font-size-medium: 20px;
     --font-size-large: 22px;
+    --font-size-extra-large: 40px;
     --font-size-omega-large: 100px;
 }
 
@@ -14,7 +16,7 @@
 .nav__list {
     display: flex;
     font-weight: 400;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
     color: black;
 
     & .isActive {
@@ -52,7 +54,7 @@
     justify-self: end;
     text-wrap: wrap;
     font-weight: 400;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
 
     & a {
         text-decoration: underline;
@@ -113,4 +115,79 @@
         border: 1px solid white;
         padding: 12px 32px;
     }
+}
+
+.lots {
+    padding: 180px 24px 0;
+}
+
+.lots__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 25px;
+
+    & li:first-child {
+        background-size: cover;
+        background-image:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../images/nature.png");
+    }
+
+    & li:nth-child(2) {
+        background-size: cover;
+        background-image:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../images/book.png");
+    }
+
+    & li:last-child {
+        background-size: cover;
+        background-image:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../images/abstractionism.png");
+    }
+}
+
+.lots__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+    height: 100%;
+}
+
+.lots__title {
+    font-size: var(--font-size-extra-large);
+    font-weight: 700;
+    margin: 0 0 27px 40px;
+}
+
+.lots__article-title {
+    color: white;
+    font-size: var(--font-size-large);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+
+.lots__article-text {
+    color: white;
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.lots__button {
+    color: black;
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-top: 30px;
 }
