@@ -12,6 +12,10 @@
     font-size: 18px;
     color: black;
 
+    & .isActive {
+        text-decoration: none;
+    }
+
     & li a {
         text-decoration: underline;
         text-decoration-thickness: 1px;
