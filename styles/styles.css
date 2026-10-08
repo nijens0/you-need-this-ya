@@ -51,4 +51,11 @@
     text-wrap: wrap;
     font-weight: 400;
     font-size: var(--font-size-medium);
+
+    & a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+        text-decoration-skip-ink: none;
+    }
 }
