@@ -46,4 +46,6 @@
     flex-direction: column;
     justify-self: end;
     text-wrap: wrap;
+    font-weight: 400;
+    font-size: 18px;
 }
