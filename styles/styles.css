@@ -226,3 +226,37 @@
     font-weight: 400;
     line-height: 1.2em;
 }
+
+.footer {
+    display: flex;
+    padding: 180px 50px 82px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__list {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    text-align: center;
+
+    & .isActive {
+        text-decoration: none;
+    }
+
+    & li a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.footer__button-wrapper {
+    display: flex;
+    gap: 48px;
+
+    & button {
+        background: none;
+        border: none;
+    }
+}
