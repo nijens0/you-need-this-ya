@@ -1,5 +1,7 @@
 :root {
     --font-size-medium: 18px;
+    --font-size-large: 22px;
+    --font-size-omega-large: 100px;
 }
 
 .header {
@@ -57,5 +59,58 @@
         text-decoration-thickness: 1px;
         text-underline-offset: 4px;
         text-decoration-skip-ink: none;
+    }
+}
+
+.cover {
+    padding: 165px 50px 50px;
+    background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("../images/lotus-flower.png");
+}
+
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: var(--font-size-omega-large);
+    font-weight: 700;
+
+    & span {
+        letter-spacing: 2rem;
+
+        &:first-of-type {
+            text-align: start;
+        }
+
+        &:nth-of-type(2) {
+            text-align: center;
+        }
+
+        &:last-of-type {
+            text-align: end;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    margin-top: 106px;
+
+    & span {
+        word-spacing: 0.9em;
+    }
+
+    & button {
+        color: inherit;
+        font-weight: inherit;
+        background: none;
+        border: 1px solid white;
+        padding: 12px 32px;
     }
 }
